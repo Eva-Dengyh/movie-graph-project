@@ -16,13 +16,13 @@ services:
       NEO4J_USERNAME: neo4j
       NEO4J_PASSWORD: moviegraphdev
     ports:
-      - "8000:8000"
+      - "127.0.0.1:18083:8000"
     depends_on:
       - neo4j
   frontend:
     build: ../frontend
     ports:
-      - "5173:5173"
+      - "127.0.0.1:18082:80"
     depends_on:
       - backend
 volumes:

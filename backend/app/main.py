@@ -33,5 +33,21 @@ def movie(movie_id: str):
 
 @app.get("/api/graph")
 def graph():
-    nodes = [GraphNode(id="dune", label="Dune", kind="movie"), GraphNode(id="villeneuve", label="Denis Villeneuve", kind="person")]
-    return {"nodes": nodes, "edges": [{"source": "dune", "target": "villeneuve", "type": "DIRECTED"}]}
+    nodes = [
+        GraphNode(id="dune", label="Dune", kind="movie"),
+        GraphNode(id="villeneuve", label="Denis Villeneuve", kind="person"),
+        GraphNode(id="chalamet", label="Timothée Chalamet", kind="person"),
+        GraphNode(id="blade", label="Blade Runner 2049", kind="movie"),
+        GraphNode(id="arrival", label="Arrival", kind="movie"),
+        GraphNode(id="scifi", label="Science Fiction", kind="genre"),
+        GraphNode(id="adventure", label="Adventure", kind="genre"),
+    ]
+    edges = [
+        {"source": "dune", "target": "villeneuve", "type": "DIRECTED"},
+        {"source": "dune", "target": "chalamet", "type": "ACTED_IN"},
+        {"source": "dune", "target": "scifi", "type": "HAS_GENRE"},
+        {"source": "dune", "target": "adventure", "type": "HAS_GENRE"},
+        {"source": "villeneuve", "target": "blade", "type": "DIRECTED"},
+        {"source": "villeneuve", "target": "arrival", "type": "DIRECTED"},
+    ]
+    return {"nodes": nodes, "edges": edges}
