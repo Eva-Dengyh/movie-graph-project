@@ -10,3 +10,8 @@ def test_movie_search():
     response = client.get('/api/movies', params={'q': 'Iron Man'})
     assert response.status_code == 200
     assert response.json()[0]['title'] == 'Iron Man'
+
+def test_movie_records_include_real_source_and_image_metadata():
+    movie = client.get('/api/movies', params={'q': 'Iron Man'}).json()[0]
+    assert movie['source_url'].startswith('https://en.wikipedia.org/')
+    assert movie['image_url'].startswith('https://')

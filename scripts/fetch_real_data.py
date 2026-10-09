@@ -74,6 +74,7 @@ def main() -> None:
                 "summary": summary.get("extract", ""),
                 "source_url": summary.get("content_urls", {}).get("desktop", {}).get("page", f"https://en.wikipedia.org/wiki/{page.replace(' ', '_')}"),
                 "source_title": summary.get("title", page),
+                "image_url": summary.get("originalimage", {}).get("source") or summary.get("thumbnail", {}).get("source", ""),
                 "fetched_at": fetched_at,
             })
             print(f"fetched: {display}")

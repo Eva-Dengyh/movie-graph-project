@@ -14,6 +14,14 @@ try:
 except (FileNotFoundError, KeyError, json.JSONDecodeError):
     MOVIES = []
 
+for movie in MOVIES:
+    movie.setdefault(
+        "image_url",
+        "https://en.wikipedia.org/wiki/Special:FilePath/"
+        + movie["title"].replace(" ", "_")
+        + ".jpg",
+    )
+
 class GraphNode(BaseModel):
     id: str
     label: str
