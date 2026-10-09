@@ -1,3 +1,6 @@
+import json
+from pathlib import Path
+
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -5,11 +8,11 @@ from pydantic import BaseModel
 app = FastAPI(title="Movie Graph API", version="0.1.0")
 app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173"], allow_methods=["*"], allow_headers=["*"])
 
-MOVIES = [
-    {"id": "dune", "title": "Dune", "year": 2021, "director": "Denis Villeneuve", "genres": ["Sci-Fi", "Adventure"]},
-    {"id": "blade-runner-2049", "title": "Blade Runner 2049", "year": 2017, "director": "Denis Villeneuve", "genres": ["Sci-Fi"]},
-    {"id": "arrival", "title": "Arrival", "year": 2016, "director": "Denis Villeneuve", "genres": ["Sci-Fi", "Drama"]},
-]
+DATA_PATH = Path(__file__).resolve().parents[2] / "data" / "real_movies.json"
+try:
+    MOVIES = json.loads(DATA_PATH.read_text())["movies"]
+except (FileNotFoundError, KeyError, json.JSONDecodeError):
+    MOVIES = []
 
 class GraphNode(BaseModel):
     id: str
@@ -33,21 +36,22 @@ def movie(movie_id: str):
 
 @app.get("/api/graph")
 def graph():
-    nodes = [
-        GraphNode(id="dune", label="Dune", kind="movie"),
-        GraphNode(id="villeneuve", label="Denis Villeneuve", kind="person"),
-        GraphNode(id="chalamet", label="Timothée Chalamet", kind="person"),
-        GraphNode(id="blade", label="Blade Runner 2049", kind="movie"),
-        GraphNode(id="arrival", label="Arrival", kind="movie"),
-        GraphNode(id="scifi", label="Science Fiction", kind="genre"),
-        GraphNode(id="adventure", label="Adventure", kind="genre"),
-    ]
-    edges = [
-        {"source": "dune", "target": "villeneuve", "type": "DIRECTED"},
-        {"source": "dune", "target": "chalamet", "type": "ACTED_IN"},
-        {"source": "dune", "target": "scifi", "type": "HAS_GENRE"},
-        {"source": "dune", "target": "adventure", "type": "HAS_GENRE"},
-        {"source": "villeneuve", "target": "blade", "type": "DIRECTED"},
-        {"source": "villeneuve", "target": "arrival", "type": "DIRECTED"},
-    ]
+    node_map: dict[str, GraphNode] = {}
+    edges: list[dict[str, str]] = []
+    for item in MOVIES:
+        movie_id = item["id"]
+        node_map[movie_id] = GraphNode(id=movie_id, label=item["title"], kind="movie")
+        for director in item["director"].split("; "):
+            director_id = "director-" + director.lower().replace(" ", "-")
+            node_map.setdefault(director_id, GraphNode(id=director_id, label=director, kind="person"))
+            edges.append({"source": movie_id, "target": director_id, "type": "DIRECTED"})
+        for genre in item["genres"]:
+            genre_id = "genre-" + genre.lower().replace(" ", "-")
+            node_map.setdefault(genre_id, GraphNode(id=genre_id, label=genre, kind="genre"))
+            edges.append({"source": movie_id, "target": genre_id, "type": "HAS_GENRE"})
+        group = item["group"]
+        group_id = "group-" + group.lower().replace(" ", "-")
+        node_map.setdefault(group_id, GraphNode(id=group_id, label=group, kind="genre"))
+        edges.append({"source": movie_id, "target": group_id, "type": "PART_OF"})
+    nodes = list(node_map.values())
     return {"nodes": nodes, "edges": edges}

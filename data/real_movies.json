@@ -1,0 +1,440 @@
+{
+  "source": "Wikipedia REST API",
+  "fetched_at": "2026-10-09T16:04:29.713062+00:00",
+  "movies": [
+    {
+      "id": "wiki-iron-man",
+      "title": "Iron Man",
+      "year": 2008,
+      "director": "Jon Favreau",
+      "group": "Marvel Cinematic Universe",
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "summary": "Iron Man is a superhero appearing in American comic books published by Marvel Comics. Co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby, the character first appeared in Tales of Suspense #39 in 1962 and received his own title with Iron Man #1 in 1968. Shortly after his creation, Iron Man became a founding member of the superhero team the Avengers, alongside Thor, Ant-Man, the Wasp, and the Hulk.",
+      "source_url": "https://en.wikipedia.org/wiki/Iron_Man",
+      "source_title": "Iron Man",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-the-incredible-hulk",
+      "title": "The Incredible Hulk",
+      "year": 2008,
+      "director": "Louis Leterrier",
+      "group": "Marvel Cinematic Universe",
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "summary": "The Hulk is a superhero appearing in American comic books published by Marvel Comics. Created by writer Stan Lee and artist Jack Kirby, the character first appeared in the debut issue of The Incredible Hulk. In his comic book appearances, the character, who has dissociative identity disorder (DID), is primarily represented by the alter ego Hulk, an immense, green-skinned, hulking brute, possessing a limitless degree of physical strength, and the alter ego Dr. Robert Bruce Banner, a physically weak, socially withdrawn, and emotionally reserved physicist, both of whom typically resent each other. Lee stated that the Hulk's creation was inspired by a combination of Frankenstein and Dr. Jekyll and Mr. Hyde.",
+      "source_url": "https://en.wikipedia.org/wiki/Hulk",
+      "source_title": "Hulk",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-iron-man-2",
+      "title": "Iron Man 2",
+      "year": 2010,
+      "director": "Jon Favreau",
+      "group": "Marvel Cinematic Universe",
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "summary": "Iron Man 2 is a 2010 American superhero film based on the Marvel Comics character Iron Man. Produced by Marvel Studios and distributed by Paramount Pictures, it is the sequel to Iron Man (2008) and the third film in the Marvel Cinematic Universe (MCU). Directed by Jon Favreau and written by Justin Theroux, the film stars Robert Downey Jr. as Tony Stark / Iron Man alongside Gwyneth Paltrow, Don Cheadle, Scarlett Johansson, Sam Rockwell, Mickey Rourke, and Samuel L. Jackson. In the film, Stark rejects government demands to share his Iron Man suit technology, which is slowly killing him. Russian scientist Ivan Vanko (Rourke) creates his own version and plots revenge against the Stark family.",
+      "source_url": "https://en.wikipedia.org/wiki/Iron_Man_2",
+      "source_title": "Iron Man 2",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-thor-film",
+      "title": "Thor",
+      "year": 2011,
+      "director": "Kenneth Branagh",
+      "group": "Marvel Cinematic Universe",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "summary": "Thor is a 2011 American superhero film based on the Marvel Comics character Thor. Produced by Marvel Studios and distributed by Paramount Pictures, it is the fourth film in the Marvel Cinematic Universe (MCU). It was directed by Kenneth Branagh, written by the writing team of Ashley Edward Miller and Zack Stentz along with Don Payne, and stars Chris Hemsworth as the title character alongside Natalie Portman, Tom Hiddleston, Stellan Skarsgård, Kat Dennings, Clark Gregg, Colm Feore, Ray Stevenson, Idris Elba, Jaimie Alexander, Rene Russo, and Anthony Hopkins. After reigniting a dormant war, Thor is banished from Asgard to Earth, stripped of his powers and his hammer Mjölnir. As his brother Loki (Hiddleston) plots to take the Asgardian throne, Thor must prove himself worthy.",
+      "source_url": "https://en.wikipedia.org/wiki/Thor_(film)",
+      "source_title": "Thor (film)",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-captain-america-the-first-avenger",
+      "title": "Captain America: The First Avenger",
+      "year": 2011,
+      "director": "Joe Johnston",
+      "group": "Marvel Cinematic Universe",
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "summary": "Captain America: The First Avenger is a 2011 American superhero film based on the Marvel Comics character Captain America. Produced by Marvel Studios and distributed by Paramount Pictures, it is the fifth film in the Marvel Cinematic Universe (MCU). The film was directed by Joe Johnston, written by Christopher Markus and Stephen McFeely, and stars Chris Evans as Steve Rogers / Captain America alongside Tommy Lee Jones, Hugo Weaving, Hayley Atwell, Sebastian Stan, Dominic Cooper, Toby Jones, Neal McDonough, Derek Luke, and Stanley Tucci. During World War II, Rogers, a frail man, is transformed into the super-soldier Captain America and must stop the Red Skull (Weaving) from using the Tesseract as an energy source for world domination.",
+      "source_url": "https://en.wikipedia.org/wiki/Captain_America%3A_The_First_Avenger",
+      "source_title": "Captain America: The First Avenger",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-the-avengers-2012-film",
+      "title": "The Avengers",
+      "year": 2012,
+      "director": "Joss Whedon",
+      "group": "Marvel Cinematic Universe",
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "summary": "Marvel's The Avengers is a 2012 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the sixth film in the Marvel Cinematic Universe (MCU). Written and directed by Joss Whedon, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the Avengers, alongside Tom Hiddleston, Stellan Skarsgård, and Samuel L. Jackson. In the film, Nick Fury and the spy agency S.H.I.E.L.D. recruit Tony Stark, Steve Rogers, Bruce Banner, Thor, Natasha Romanoff, and Clint Barton to form a team capable of stopping Thor's brother Loki from subjugating Earth.",
+      "source_url": "https://en.wikipedia.org/wiki/The_Avengers_(2012_film)",
+      "source_title": "The Avengers (2012 film)",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-guardians-of-the-galaxy-film",
+      "title": "Guardians of the Galaxy",
+      "year": 2014,
+      "director": "James Gunn",
+      "group": "Marvel Cinematic Universe",
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "summary": "Guardians of the Galaxy is a 2014 American superhero film based on the Marvel Comics superhero team the Guardians of the Galaxy. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 10th film in the Marvel Cinematic Universe (MCU). Directed by James Gunn, who wrote the screenplay with Nicole Perlman, it features an ensemble cast including Chris Pratt, Zoe Saldaña, Dave Bautista, Vin Diesel, and Bradley Cooper as the titular Guardians, along with Lee Pace, Michael Rooker, Karen Gillan, Djimon Hounsou, John C. Reilly, Glenn Close, and Benicio del Toro. In the film, Peter Quill (Pratt) and a group of extraterrestrial criminals go on the run after stealing a powerful artifact.",
+      "source_url": "https://en.wikipedia.org/wiki/Guardians_of_the_Galaxy_(film)",
+      "source_title": "Guardians of the Galaxy (film)",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-black-panther-film",
+      "title": "Black Panther",
+      "year": 2018,
+      "director": "Ryan Coogler",
+      "group": "Marvel Cinematic Universe",
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "summary": "Black Panther is a 2018 American superhero film based on the Marvel Comics character T'Challa / Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 18th film in the Marvel Cinematic Universe (MCU). The film was directed by Ryan Coogler from a screenplay he wrote with Joe Robert Cole, and stars Chadwick Boseman as T'Challa / Black Panther alongside Michael B. Jordan, Lupita Nyong'o, Danai Gurira, Martin Freeman, Daniel Kaluuya, Letitia Wright, Winston Duke, Sterling K. Brown, Angela Bassett, Forest Whitaker, and Andy Serkis. In the film, T'Challa is crowned king of the African nation Wakanda following his father's death, but he is soon challenged for the throne by Killmonger (Jordan), who plans to abandon Wakanda's isolationist policies and use the country's resources to begin a global revolution.",
+      "source_url": "https://en.wikipedia.org/wiki/Black_Panther_(film)",
+      "source_title": "Black Panther (film)",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-avengers-infinity-war",
+      "title": "Avengers: Infinity War",
+      "year": 2018,
+      "director": "Anthony Russo; Joe Russo",
+      "group": "Marvel Cinematic Universe",
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "summary": "Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the sequel to The Avengers (2012) and Avengers: Age of Ultron (2015), and the 19th film in the Marvel Cinematic Universe (MCU). Directed by Anthony and Joe Russo and written by Christopher Markus and Stephen McFeely, the film features an ensemble cast including Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans, Scarlett Johansson, Benedict Cumberbatch, Don Cheadle, Tom Holland, Chadwick Boseman, Paul Bettany, Elizabeth Olsen, Anthony Mackie, Sebastian Stan, Danai Gurira, Letitia Wright, Dave Bautista, Zoe Saldaña, Josh Brolin, and Chris Pratt. In the film, the Avengers and the Guardians of the Galaxy attempt to stop Thanos from collecting the six powerful Infinity Stones as part of his quest to kill half of all life in the universe.",
+      "source_url": "https://en.wikipedia.org/wiki/Avengers%3A_Infinity_War",
+      "source_title": "Avengers: Infinity War",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-avengers-endgame",
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "director": "Anthony Russo; Joe Russo",
+      "group": "Marvel Cinematic Universe",
+      "genres": [
+        "Action",
+        "Science Fiction"
+      ],
+      "summary": "Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the direct sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel Cinematic Universe (MCU). Directed by Anthony and Joe Russo and written by Christopher Markus and Stephen McFeely, the film features an ensemble cast that includes Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Benedict Wong, Jon Favreau, Bradley Cooper, Gwyneth Paltrow, and Josh Brolin. In the film, the surviving members of the Avengers and their allies attempt to reverse Thanos's actions in Infinity War, which erased half of all life in the universe.",
+      "source_url": "https://en.wikipedia.org/wiki/Avengers%3A_Endgame",
+      "source_title": "Avengers: Endgame",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-following",
+      "title": "Following",
+      "year": 1998,
+      "director": "Christopher Nolan",
+      "group": "Christopher Nolan",
+      "genres": [
+        "Crime",
+        "Thriller"
+      ],
+      "summary": "Following is a 1998 British independent neo-noir film written, directed, photographed and edited by Christopher Nolan in his feature film directorial debut. He co-produced the film with his wife, Emma Thomas, and actor Jeremy Theobald. Using a non-linear narrative, it tells the story of an aspiring writer (Theobald) who follows strangers around the streets of London and is drawn into a criminal underworld when he fails to keep his distance.",
+      "source_url": "https://en.wikipedia.org/wiki/Following",
+      "source_title": "Following",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-memento-film",
+      "title": "Memento",
+      "year": 2000,
+      "director": "Christopher Nolan",
+      "group": "Christopher Nolan",
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
+      "summary": "Memento is a 2000 American neo-noir psychological thriller film written for the screen and directed by Christopher Nolan, based on the 2001 short story \"Memento Mori\" by his brother, Jonathan Nolan. The film stars Guy Pearce as a man who has anterograde amnesia, resulting in the inability to form new long-term memories. He uses an elaborate system of photos, notes, and tattoos in an attempt to uncover the perpetrator who killed his wife and caused him to sustain the condition. Carrie-Anne Moss and Joe Pantoliano appear in supporting roles.",
+      "source_url": "https://en.wikipedia.org/wiki/Memento_(film)",
+      "source_title": "Memento (film)",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-batman-begins",
+      "title": "Batman Begins",
+      "year": 2005,
+      "director": "Christopher Nolan",
+      "group": "Christopher Nolan",
+      "genres": [
+        "Action",
+        "Superhero"
+      ],
+      "summary": "Batman Begins is a 2005 superhero film based on the DC Comics character Batman. Directed by Christopher Nolan, who co-wrote the screenplay with David S. Goyer, the film stars Christian Bale as Bruce Wayne / Batman, with Michael Caine, Liam Neeson, Katie Holmes, Gary Oldman, Cillian Murphy, Tom Wilkinson, Rutger Hauer, Ken Watanabe, and Morgan Freeman in supporting roles. The film reboots the Batman film series, telling the origin story of Bruce Wayne (Bale) from the death of his parents to his journey to become Batman and his fight to stop Ra's al Ghul (Neeson) and the Scarecrow (Murphy) from plunging Gotham City into chaos.",
+      "source_url": "https://en.wikipedia.org/wiki/Batman_Begins",
+      "source_title": "Batman Begins",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-the-dark-knight",
+      "title": "The Dark Knight",
+      "year": 2008,
+      "director": "Christopher Nolan",
+      "group": "Christopher Nolan",
+      "genres": [
+        "Action",
+        "Superhero"
+      ],
+      "summary": "The Dark Knight is a 2008 superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan. Based on the DC Comics superhero Batman, it is the sequel to Batman Begins (2005), and the second installment in The Dark Knight trilogy. The plot follows the vigilante Batman, police lieutenant James Gordon, and district attorney Harvey Dent, who form an alliance to dismantle organized crime in Gotham City. Their efforts are derailed by the Joker, an anarchistic mastermind who seeks to test how far Batman will go to save the city from chaos. The cast includes Christian Bale, Michael Caine, Heath Ledger, Gary Oldman, Aaron Eckhart, Maggie Gyllenhaal, and Morgan Freeman.",
+      "source_url": "https://en.wikipedia.org/wiki/The_Dark_Knight",
+      "source_title": "The Dark Knight",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-inception",
+      "title": "Inception",
+      "year": 2010,
+      "director": "Christopher Nolan",
+      "group": "Christopher Nolan",
+      "genres": [
+        "Science Fiction",
+        "Thriller"
+      ],
+      "summary": "Inception is a 2010 science fiction heist film written and directed by Christopher Nolan, who also produced it with his wife Emma Thomas. The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating his targets' subconscious. He is offered a chance to have his criminal history erased as payment for implanting an idea into a target's subconscious. The ensemble cast includes Ken Watanabe, Joseph Gordon-Levitt, Marion Cotillard, Elliot Page, Tom Hardy, Cillian Murphy, Tom Berenger, Dileep Rao, and Michael Caine.",
+      "source_url": "https://en.wikipedia.org/wiki/Inception",
+      "source_title": "Inception",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-the-dark-knight-rises",
+      "title": "The Dark Knight Rises",
+      "year": 2012,
+      "director": "Christopher Nolan",
+      "group": "Christopher Nolan",
+      "genres": [
+        "Action",
+        "Superhero"
+      ],
+      "summary": "The Dark Knight Rises is a 2012 superhero film based on the DC Comics character Batman. Directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan, and the story with David S. Goyer, it is the final installment in Nolan's The Dark Knight trilogy, and the sequel to The Dark Knight (2008). The film stars Christian Bale as Bruce Wayne / Batman, alongside Anne Hathaway, Gary Oldman, Tom Hardy, Morgan Freeman, Marion Cotillard, Joseph Gordon-Levitt, and Michael Caine. Set eight years after the events of The Dark Knight, it follows a retired Wayne being forced to resume his role as Batman to save Gotham City from nuclear destruction at the hands of the terrorist Bane (Hardy).",
+      "source_url": "https://en.wikipedia.org/wiki/The_Dark_Knight_Rises",
+      "source_title": "The Dark Knight Rises",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-interstellar-film",
+      "title": "Interstellar",
+      "year": 2014,
+      "director": "Christopher Nolan",
+      "group": "Christopher Nolan",
+      "genres": [
+        "Science Fiction",
+        "Drama"
+      ],
+      "summary": "Interstellar is a 2014 epic science fiction drama film directed by Christopher Nolan, who co-wrote the screenplay with his brother, Jonathan Nolan. It features an ensemble cast led by Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, and Michael Caine. Set in a dystopian future where Earth is suffering from catastrophic blight and famine, the film follows a group of astronauts who travel through space in search of a new home for humanity.",
+      "source_url": "https://en.wikipedia.org/wiki/Interstellar_(film)",
+      "source_title": "Interstellar (film)",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-dunkirk-2017-film",
+      "title": "Dunkirk",
+      "year": 2017,
+      "director": "Christopher Nolan",
+      "group": "Christopher Nolan",
+      "genres": [
+        "War",
+        "Drama"
+      ],
+      "summary": "Dunkirk is a 2017 war film produced, written, and directed by Christopher Nolan that depicts the Dunkirk evacuation of World War II from the perspectives of people on the land, sea, and air. It features an ensemble cast including Fionn Whitehead, Tom Glynn-Carney, Jack Lowden, Harry Styles in his feature film debut, Aneurin Barnard, James D'Arcy, Barry Keoghan, Kenneth Branagh, Cillian Murphy, Mark Rylance, and Tom Hardy.",
+      "source_url": "https://en.wikipedia.org/wiki/Dunkirk_(2017_film)",
+      "source_title": "Dunkirk (2017 film)",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-tenet-film",
+      "title": "Tenet",
+      "year": 2020,
+      "director": "Christopher Nolan",
+      "group": "Christopher Nolan",
+      "genres": [
+        "Science Fiction",
+        "Action"
+      ],
+      "summary": "Tenet is a 2020 science fiction action film written and directed by Christopher Nolan, who also produced it with his wife, Emma Thomas. It stars John David Washington, Robert Pattinson, Elizabeth Debicki, Dimple Kapadia, Michael Caine, and Kenneth Branagh. The film follows a CIA officer who is recruited into a secret organization, tasked with tracing the origin of objects that are traveling backward through time and their connection to an attack by the future.",
+      "source_url": "https://en.wikipedia.org/wiki/Tenet",
+      "source_title": "Tenet",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-oppenheimer-film",
+      "title": "Oppenheimer",
+      "year": 2023,
+      "director": "Christopher Nolan",
+      "group": "Christopher Nolan",
+      "genres": [
+        "Biography",
+        "Drama"
+      ],
+      "summary": "Oppenheimer is a 2023 epic biographical thriller film written, co-produced, and directed by Christopher Nolan. It follows the life of J. Robert Oppenheimer, the American theoretical physicist who led the development of the first nuclear weapons during World War II. Based on the 2005 biography American Prometheus by Kai Bird and Martin J. Sherwin, the film dramatizes Oppenheimer's studies, his direction of the Los Alamos Laboratory and his 1954 security hearing. Cillian Murphy stars as Oppenheimer, alongside an ensemble supporting cast that includes Emily Blunt, Matt Damon, Robert Downey Jr., Florence Pugh, Josh Hartnett, Casey Affleck, Rami Malek, and Kenneth Branagh.",
+      "source_url": "https://en.wikipedia.org/wiki/Oppenheimer_(film)",
+      "source_title": "Oppenheimer (film)",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-from-beijing-with-love",
+      "title": "From Beijing with Love",
+      "year": 1994,
+      "director": "Stephen Chow; Lee Lik-chi",
+      "group": "Stephen Chow",
+      "genres": [
+        "Comedy",
+        "Action"
+      ],
+      "summary": "From Beijing With Love is a 1994 Hong Kong spy comedy film directed by Stephen Chow and Lee Lik-chi. The film is a very direct spoof of the James Bond films.",
+      "source_url": "https://en.wikipedia.org/wiki/From_Beijing_with_Love",
+      "source_title": "From Beijing with Love",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-a-chinese-odyssey-part-one-pandora's-box",
+      "title": "A Chinese Odyssey Part One: Pandora's Box",
+      "year": 1995,
+      "director": "Jeffrey Lau",
+      "group": "Stephen Chow",
+      "genres": [
+        "Comedy",
+        "Fantasy"
+      ],
+      "summary": "A Chinese Odyssey is Chinese film series directed by Jeffrey Lau. It is a spin-off of the 16th-century novel Journey to the West, following the adventures of Sun Wukong when he gets sidetracked while escorting Tang Sanzang on their quest for the Buddhist scriptures. The original series consisted of two back-to-back films released in 1995: A Chinese Odyssey Part One: Pandora's Box (西遊記第壹佰零壹回之月光寶盒) and A Chinese Odyssey Part Two: Cinderella (西遊記大結局之仙履奇緣), starring Stephen Chow, Athena Chu, Ng Man-tat, Yammie Lam, Karen Mok, Law Kar-ying, Lu Shuming and Ada Choi. A third film, A Chinese Odyssey Part Three, with a largely different cast and less popularity, was released on 14 September 2016.",
+      "source_url": "https://en.wikipedia.org/wiki/A_Chinese_Odyssey",
+      "source_title": "A Chinese Odyssey",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-a-chinese-odyssey-part-two-cinderella",
+      "title": "A Chinese Odyssey Part Two: Cinderella",
+      "year": 1995,
+      "director": "Jeffrey Lau",
+      "group": "Stephen Chow",
+      "genres": [
+        "Comedy",
+        "Fantasy"
+      ],
+      "summary": "A Chinese Odyssey is Chinese film series directed by Jeffrey Lau. It is a spin-off of the 16th-century novel Journey to the West, following the adventures of Sun Wukong when he gets sidetracked while escorting Tang Sanzang on their quest for the Buddhist scriptures. The original series consisted of two back-to-back films released in 1995: A Chinese Odyssey Part One: Pandora's Box (西遊記第壹佰零壹回之月光寶盒) and A Chinese Odyssey Part Two: Cinderella (西遊記大結局之仙履奇緣), starring Stephen Chow, Athena Chu, Ng Man-tat, Yammie Lam, Karen Mok, Law Kar-ying, Lu Shuming and Ada Choi. A third film, A Chinese Odyssey Part Three, with a largely different cast and less popularity, was released on 14 September 2016.",
+      "source_url": "https://en.wikipedia.org/wiki/A_Chinese_Odyssey",
+      "source_title": "A Chinese Odyssey",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-the-god-of-cookery",
+      "title": "The God of Cookery",
+      "year": 1996,
+      "director": "Stephen Chow; Lee Lik-chi",
+      "group": "Stephen Chow",
+      "genres": [
+        "Comedy"
+      ],
+      "summary": "The God of Cookery is a 1996 Hong Kong comedy film which was co-directed by Stephen Chow and Lee Lik-chi. The film features an ensemble cast include Stephen Chow, Karen Mok, Vincent Kok and Richard Ng.",
+      "source_url": "https://en.wikipedia.org/wiki/The_God_of_Cookery",
+      "source_title": "The God of Cookery",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-shaolin-soccer",
+      "title": "Shaolin Soccer",
+      "year": 2001,
+      "director": "Stephen Chow",
+      "group": "Stephen Chow",
+      "genres": [
+        "Comedy",
+        "Sports"
+      ],
+      "summary": "Shaolin Soccer is a 2001 Hong Kong sports comedy film directed by Stephen Chow, who also stars in the lead role. The film revolves around a former Shaolin monk who reunites his five brothers, years after their master's death, to apply their superhuman martial arts skills to play soccer and bring Shaolin kung fu to the masses. Over the years the film has grown as a cult film. A standalone sequel, Kung Fu Soccer, was released in 2026.",
+      "source_url": "https://en.wikipedia.org/wiki/Shaolin_Soccer",
+      "source_title": "Shaolin Soccer",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-kung-fu-hustle",
+      "title": "Kung Fu Hustle",
+      "year": 2004,
+      "director": "Stephen Chow",
+      "group": "Stephen Chow",
+      "genres": [
+        "Comedy",
+        "Action"
+      ],
+      "summary": "Kung Fu Hustle is a 2004 martial arts action comedy film directed, produced and co-written by Stephen Chow, who also stars in the leading role, alongside Huang Shengyi, Yuen Wah, Yuen Qiu, Danny Chan Kwok-kwan and Leung Siu-lung in prominent roles. The story revolves around a murderous neighbourhood gang, a poor village with unlikely heroes and an aspiring gangster's fierce journey to find his true self. The martial arts choreography is supervised by Yuen Woo-ping. Film scholar Christina Klein describes Kung Fu Hustle as a transnational Chinese-language film whose mode of production is closely connected to its visual and narrative style.",
+      "source_url": "https://en.wikipedia.org/wiki/Kung_Fu_Hustle",
+      "source_title": "Kung Fu Hustle",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-cj7",
+      "title": "CJ7",
+      "year": 2008,
+      "director": "Stephen Chow",
+      "group": "Stephen Chow",
+      "genres": [
+        "Comedy",
+        "Science Fiction"
+      ],
+      "summary": "CJ7 is a 2008 Chinese-Hong Kong science fiction comedy film co-written, co-produced, starring, and directed by Stephen Chow in his final film acting performance, before he became a fulltime filmmaker. The film was released theatrically in China on 30 January 2008 and in Hong Kong on 31 January 2008.",
+      "source_url": "https://en.wikipedia.org/wiki/CJ7",
+      "source_title": "CJ7",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-journey-to-the-west-conquering-the-demons",
+      "title": "Journey to the West: Conquering the Demons",
+      "year": 2013,
+      "director": "Stephen Chow; Derek Kwok",
+      "group": "Stephen Chow",
+      "genres": [
+        "Comedy",
+        "Fantasy"
+      ],
+      "summary": "Journey to the West: Conquering the Demons is a 2013 fantasy comedy film co-written and produced by Stephen Chow and co-directed by Chow and Derek Kwok. A Chinese-Hong Kong co-production, the movie was first announced in July 2011 and was released on 10 February 2013 in China. The film is a loose comedic re-interpretation of the 16th-century novel Journey to the West, a Chinese literary classic often believed to be written by Wu Cheng'en.",
+      "source_url": "https://en.wikipedia.org/wiki/Journey_to_the_West%3A_Conquering_the_Demons",
+      "source_title": "Journey to the West: Conquering the Demons",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    },
+    {
+      "id": "wiki-the-mermaid-2016-film",
+      "title": "The Mermaid",
+      "year": 2016,
+      "director": "Stephen Chow",
+      "group": "Stephen Chow",
+      "genres": [
+        "Comedy",
+        "Fantasy"
+      ],
+      "summary": "The Mermaid is a 2016 romantic fantasy comedy film directed, co-written and produced by Stephen Chow, which stars Lin Yun, Deng Chao, Zhang Yuqi and Show Lo. A Chinese-Hong Kong co-production, the film tells the story of a playboy businessman who falls in love with a mermaid sent to assassinate him.",
+      "source_url": "https://en.wikipedia.org/wiki/The_Mermaid_(2016_film)",
+      "source_title": "The Mermaid (2016 film)",
+      "fetched_at": "2026-10-09T16:04:29.713062+00:00"
+    }
+  ]
+}
