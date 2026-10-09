@@ -71,6 +71,14 @@ def movie(movie_id: str):
 def graph_qa(payload: Question):
     question = payload.question.strip()
     normalized = question.casefold()
+    if "between" in normalized and " and " in normalized:
+        left, right = normalized.split("between", 1)[1].split(" and ", 1)
+        start = next((m["title"] for m in MOVIES if m["title"].casefold() == left.strip()), left.strip())
+        end = next((m["title"] for m in MOVIES if m["title"].casefold() == right.strip().rstrip("?")), right.strip().rstrip("?"))
+        if GRAPH_STORE.available:
+            rows = GRAPH_STORE.run(PATH_QUERY, {"start": start, "end": end, "limit": 10})
+            return {"answer": f"Found {len(rows)} graph path(s) between {start} and {end}.", "intent": "find_path", "paths": rows, "sources": []}
+        return {"answer": "Multi-hop paths require Neo4j to be available.", "intent": "find_path", "paths": [], "sources": []}
     if any(word in normalized for word in ("who directed", "director of", "导演")):
         match = next((m for m in MOVIES if m["title"].casefold() in normalized), None)
         if match:

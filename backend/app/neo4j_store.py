@@ -28,4 +28,17 @@ class Neo4jStore:
         if not self.driver:
             return []
         with self.driver.session() as session:
-            return [record.data() for record in session.run(cypher, **params)]
+            return [_jsonable(record.data()) for record in session.run(cypher, **params)]
+
+def _jsonable(value: Any) -> Any:
+    if isinstance(value, dict):
+        return {key: _jsonable(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [_jsonable(item) for item in value]
+    if hasattr(value, "nodes") and hasattr(value, "relationships"):
+        return {"nodes": [_jsonable(node) for node in value.nodes], "relationships": [_jsonable(rel) for rel in value.relationships]}
+    if hasattr(value, "items") and hasattr(value, "labels"):
+        return {"labels": list(value.labels), "properties": dict(value.items())}
+    if hasattr(value, "type") and hasattr(value, "items"):
+        return {"type": value.type, "properties": dict(value.items())}
+    return value

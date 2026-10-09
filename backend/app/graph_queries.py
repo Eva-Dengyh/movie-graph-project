@@ -12,7 +12,8 @@ RETURN m, collect({type: type(r), node: n}) AS relations
 """.strip()
 
 PATH_QUERY = """
-MATCH path = (a {name: $start})-[*1..$max_hops]-(b {name: $end})
+MATCH path = (a)-[*1..3]-(b)
+WHERE coalesce(a.name, a.title) = $start AND coalesce(b.name, b.title) = $end
 RETURN path ORDER BY length(path) LIMIT $limit
 """.strip()
 
