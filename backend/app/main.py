@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 
 from fastapi import FastAPI, Query
@@ -27,6 +28,9 @@ class GraphNode(BaseModel):
     label: str
     kind: str
 
+class Question(BaseModel):
+    question: str
+
 @app.get("/health")
 def health():
     return {"status": "ok", "service": "movie-graph-api"}
@@ -41,6 +45,29 @@ def movies(q: str | None = Query(default=None, max_length=80)):
 @app.get("/api/movies/{movie_id}")
 def movie(movie_id: str):
     return next((m for m in MOVIES if m["id"] == movie_id), {"detail": "Movie not found"})
+
+@app.post("/api/qa")
+def graph_qa(payload: Question):
+    question = payload.question.strip()
+    normalized = question.casefold()
+    if any(word in normalized for word in ("who directed", "director of", "导演")):
+        match = next((m for m in MOVIES if m["title"].casefold() in normalized), None)
+        if match:
+            return {"answer": f"{match['title']} was directed by {match['director']}.", "intent": "movie_director", "sources": [match]}
+    if any(word in normalized for word in ("what movies", "which films", "作品", "拍了哪些")):
+        director = next((m["director"] for m in MOVIES if m["director"].casefold() in normalized), None)
+        if director:
+            matches = [m for m in MOVIES if director.casefold() in m["director"].casefold()]
+            return {"answer": f"{director} is linked to {len(matches)} films in this graph.", "intent": "director_movies", "sources": matches}
+    if any(word in normalized for word in ("genre", "类型", "属于什么")):
+        match = next((m for m in MOVIES if m["title"].casefold() in normalized), None)
+        if match:
+            return {"answer": f"{match['title']} is tagged as {', '.join(match['genres'])}.", "intent": "movie_genres", "sources": [match]}
+    if any(word in normalized for word in ("universe", "group", "宇宙", "系列")):
+        match = next((m for m in MOVIES if m["title"].casefold() in normalized), None)
+        if match:
+            return {"answer": f"{match['title']} belongs to {match['group']}.", "intent": "movie_group", "sources": [match]}
+    return {"answer": "I could not map that question to a supported graph query yet.", "intent": "unsupported", "sources": [], "supported_queries": ["Who directed Inception?", "What movies did Christopher Nolan direct?", "What genre is Dune?"]}
 
 @app.get("/api/graph")
 def graph():

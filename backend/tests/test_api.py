@@ -15,3 +15,10 @@ def test_movie_records_include_real_source_and_image_metadata():
     movie = client.get('/api/movies', params={'q': 'Iron Man'}).json()[0]
     assert movie['source_url'].startswith('https://en.wikipedia.org/')
     assert movie['image_url'].startswith('https://')
+
+def test_graph_qa_answers_director_question_from_real_records():
+    response = client.post('/api/qa', json={'question': 'Who directed Inception?'})
+    assert response.status_code == 200
+    body = response.json()
+    assert body['answer'] == 'Inception was directed by Christopher Nolan.'
+    assert body['sources'][0]['title'] == 'Inception'
