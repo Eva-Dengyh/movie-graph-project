@@ -5,6 +5,8 @@ from pathlib import Path
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from .neo4j_store import Neo4jStore
+from .graph_queries import DIRECTOR_QUERY, MOVIE_CONTEXT_QUERY, PATH_QUERY
 
 app = FastAPI(title="Movie Graph API", version="0.1.0")
 app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173"], allow_methods=["*"], allow_headers=["*"])
@@ -14,6 +16,8 @@ try:
     MOVIES = json.loads(DATA_PATH.read_text())["movies"]
 except (FileNotFoundError, KeyError, json.JSONDecodeError):
     MOVIES = []
+
+GRAPH_STORE = Neo4jStore()
 
 for movie in MOVIES:
     movie.setdefault(
@@ -31,9 +35,26 @@ class GraphNode(BaseModel):
 class Question(BaseModel):
     question: str
 
+class CypherRequest(BaseModel):
+    template: str
+    params: dict[str, str | int] = {}
+
 @app.get("/health")
 def health():
-    return {"status": "ok", "service": "movie-graph-api"}
+    return {"status": "ok", "service": "movie-graph-api", "neo4j": GRAPH_STORE.available}
+
+@app.get("/api/storage")
+def storage():
+    return {"backend": "neo4j" if GRAPH_STORE.available else "json-fallback", "neo4j": GRAPH_STORE.available}
+
+@app.post("/api/cypher")
+def cypher(request: CypherRequest):
+    templates = {"director_movies": DIRECTOR_QUERY, "movie_context": MOVIE_CONTEXT_QUERY, "find_path": PATH_QUERY}
+    if request.template not in templates:
+        return {"error": "Unsupported read-only query template"}
+    if not GRAPH_STORE.available:
+        return {"backend": "json-fallback", "rows": []}
+    return {"backend": "neo4j", "rows": GRAPH_STORE.run(templates[request.template], request.params)}
 
 @app.get("/api/movies")
 def movies(q: str | None = Query(default=None, max_length=80)):

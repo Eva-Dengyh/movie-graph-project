@@ -22,3 +22,8 @@ def test_graph_qa_answers_director_question_from_real_records():
     body = response.json()
     assert body['answer'] == 'Inception was directed by Christopher Nolan.'
     assert body['sources'][0]['title'] == 'Inception'
+
+def test_cypher_endpoint_only_accepts_named_read_templates():
+    response = client.post('/api/cypher', json={'template': 'drop_database'})
+    assert response.status_code == 200
+    assert response.json()['error'] == 'Unsupported read-only query template'
